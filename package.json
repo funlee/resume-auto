@@ -1,0 +1,32 @@
+{
+  "name": "resume-auto",
+  "version": "1.0.0",
+  "description": "Wow, such a beautiful resume",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funlee/resume-auto.git"
+  },
+  "author": "funlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/funlee/resume-auto/issues"
+  },
+  "homepage": "https://github.com/funlee/resume-auto#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-less": "^3.3.2",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "opa": "^11.22.0"
+  }
+}

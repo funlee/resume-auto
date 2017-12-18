@@ -1,0 +1,178 @@
+/*
+ * @Author: funlee 
+ * @Email: i@funlee.cn 
+ * @Date: 2017-12-18 07:20:24 
+ * @Last Modified time:   2017-12-18 07:20:24 
+ * @Description: 自定义样式 
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.4px;
+}
+
+body {
+    background: rgb(18, 208, 161);
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+    line-height: 1.5;
+}
+
+li {
+    list-style: none;
+    margin: 0 0 10px 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e8e8e8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(18, 208, 161);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    opacity: .8;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(18, 165, 128);
+}
+
+.resume {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    min-height: 500px;
+    margin: 50px auto;
+    .row {
+        overflow: hidden;
+    }
+    .progress {
+        height: 10px;
+    }
+    .fa {
+        text-align: center;
+        font: normal normal normal 16px/1 FontAwesome;
+        min-width: 20px;
+        line-height: 23px;
+        margin-right: 5px;
+    }
+    .skills li {
+        margin: 0 0 24px 0;
+    }
+    .portrait {
+        width: 128px;
+        height: 158px;
+        box-sizing: border-box;
+        padding: 8px;
+        position: relative;
+        background: #e5e5e5;
+        overflow: hidden;
+        margin: 0 auto 20px;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .item {
+        margin-top: 30px;
+        &:last-child {
+            padding-bottom: 40px;
+        }
+    }
+    .item-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 32px;
+        margin-right: 10px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .item-title {
+        display: flex;
+        margin-bottom: 10px;
+        span {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            height: 30px;
+            line-height: 27px;
+            flex: 1;
+        }
+    }
+    .item-info {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        color: #4b4b4b;
+    }
+    .link {
+        a {
+            display: inline-block;
+            padding: 0 5px;
+            border: 1px solid #0b70bd;
+            border-radius: 3px;
+            color: #0b70bd;
+            text-align: center;
+            &:hover {
+                color: #fff;
+                background-color: #0b70bd;
+                text-decoration: none;
+            }
+        }
+    }
+    .side-left {
+        background: #0b70bd;
+        height: 100%;
+        color: #fff;
+        padding: 40px 36px 1000px;
+        margin-bottom: -1000px;
+        a {
+            color: #fff;
+            &:hover {
+                color: #fff;
+            }
+        }
+        .item-icon {
+            background: #fff;
+            color: #0b70bd;
+        }
+        .item-title {
+            span {
+                color: #fff;
+            }
+        }
+    }
+    .side-right {
+        background: #fff;
+        height: 100%;
+        padding: 40px 36px 1000px;
+        margin-bottom: -1000px;
+        a {
+            color: #333;
+            &:hover {
+                color: #333;
+            }
+        }
+        .item-icon {
+            background: #0b70bd;
+            color: #fff;
+        }
+        .item-title {
+            span {
+                color: #0b70bd;
+                flex: 1;
+                border-bottom: 1px solid #0b70bd;
+            }
+        }
+    }
+}
