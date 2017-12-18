@@ -1,0 +1,22 @@
+<div class="item-title">
+  <i class="fa fa-list item-icon"></i>
+  <span>项目经验</span>
+</div>
+<ul>
+  {{#each this}}
+  <li>
+    <div class="item-info">
+      <span class="time">{{time}}</span>
+      <span class="name">{{name}}</span>
+      <span class="link">
+        <a href="{{linkUrl}}" target="_black" title="{{name}}">{{linkText}}</a>
+      </span>
+    </div>
+    <div class="item-desciption">
+      {{#each details}}
+      <P>{{text}}</P>
+      {{/each}}
+    </div>
+  </li>
+  {{/each}}
+</ul>

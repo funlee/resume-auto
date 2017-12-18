@@ -1,0 +1,139 @@
+{
+  "basic": {
+    "name": "funlee",
+    "really": "李逸辰",
+    "nation": "汉族",
+    "location": "重庆",
+    "birth": "1992.10",
+    "flag": "前端、数据可视化",
+    "education": "西南科技大学（本科）"
+  },
+  "contact": {
+    "tel": "13527473628",
+    "email": "i@funlee.cn",
+    "qq": "458109846",
+    "wechat": "lyc458109846",
+    "website": "http://init.funlee.cn",
+    "github": "https://github.com/funlee"
+  },
+  "skills": [{
+      "name": "HTML5&CSS3",
+      "proportion": "95%"
+    },
+    {
+      "name": "JavaScript",
+      "proportion": "90%"
+    },
+    {
+      "name": "D3js",
+      "proportion": "88%"
+    },
+    {
+      "name": "SVG",
+      "proportion": "86%"
+    },
+    {
+      "name": "Vuejs",
+      "proportion": "80%"
+    },
+    {
+      "name": "NodeJS",
+      "proportion": "70%"
+    },
+    {
+      "name": "mongoDB",
+      "proportion": "65%"
+    }
+  ],
+  "advantage": [{
+      "text": "有十余个前端项目的开发经验，熟悉web项目开发流程"
+    },
+    {
+      "text": "熟悉前端工程化开发模式，在实际项目中使用过CSS预处理器、前端自动化工具、JS模块化开发工具、前端框架Vuejs"
+    },
+    {
+      "text": "对D3js、Echarts具有丰富的使用经验，能熟练开发常用图表、地图等可视化图表组件"
+    },
+    {
+      "text": "热爱分享，具备一定演讲能力，曾多次在组内进行前端技术分享,涵盖HTML5、CSS3、D3js、SVG动画"
+    }
+  ],
+  "work": [{
+      "time": "2016.8-至今",
+      "company": "海云数据",
+      "job": "前端工程师",
+      "details": [{
+          "text": "运用Webpack+D3js+Echarts完成公司数据可视化项目的前端开发工作"
+        },
+        {
+          "text": "运用Vue+iview+Express+mongoDB开发公司内部OA系统"
+        },
+        {
+          "text": "开发迭代项目中常用的D3js图表组件库及UI组件库，提升项目开发效率"
+        },
+        {
+          "text": "研究目前流行的可视化技术：threejs、mapbox、openlayer等，并在组内进行技术学习分享"
+        }
+      ]
+    },
+    {
+      "time": "2016.1-2016.8",
+      "company": "重庆叁壹伍捌",
+      "job": "前端工程师",
+      "details": [{
+          "text": "负责<a href='http://www.3158.com' target='_black' title='3158.com'>企业在线PC端[http: //www.3158.com]</a>和<a href='http://m.3158.com'>移动端[http: //m.3158.com]</a>两个站点的前端重构工作"
+        },
+        {
+          "text": "负责<a href='http://www.3158.com/zst' target='_black'>商机通[http: //www.3158.com/zst]</a>产品宣传页的开发"
+        },
+        {
+          "text": "维护公司十几个子站的功能迭代和bug修复"
+        },
+        {
+          "text": "配合运营部门，负责专题活动单页面的前端开发和上线部署"
+        }
+      ]
+    }
+  ],
+  "project": [{
+      "time": "2017.9",
+      "name": "昆明市公安局综合展示平台",
+      "linkUrl": "",
+      "linkText": "内网使用",
+      "details": [{
+          "text": "基于Webpack+D3js+ES6脚手架开发的可视化项目，通过此项目对昆明市海量的警务数据进行集中可视化大屏展示，从而帮助警务人员全部快速掌握警务信息，做出相应的决策。"
+        },
+        {
+          "text": "该项目分为五个专题部分，共计十六个页面，在该项目中担任项目前端开发负责人，参与需求评审、工时评估和技术可行性评估工作，统筹前后端接口文档编写、页面设计稿还原、前后端联调的整体工作，该项目参与昆明市地区大数据平台擂台赛获得第一名。"
+        }
+      ]
+    },
+    {
+      "time": "2017.9",
+      "name": "hyOA",
+      "linkUrl": "",
+      "linkText": "内网使用",
+      "details": [{
+        "text": "运用Vue+Express+MongoDB进行开发的OA系统，功能包括员工信息、人事考勤管理、项目中心图书借阅情况、各个项目开发进度等，通过此项目，掌握了NodeJS在服务端的运用，对后端开发和数据库的操作有了一定认识。"
+      }]
+    },
+    {
+      "time": "2017.9",
+      "name": "d3Charts",
+      "linkUrl": "https://github.com/funlee/d3charts",
+      "linkText": "link",
+      "details": [{
+        "text": "基于Webpack+D3js开发的图表展示页面，是内部图表组件库的精简版，用于给前端组实习生和新加入的同事分享D3js在项目中的运用，旨在帮助新人快速掌握D3js，并能迅速在实际项目中使用。"
+      }]
+    },
+    {
+      "time": "2017.9",
+      "name": "imooc-list",
+      "linkUrl": "https://github.com/funlee/imooc-list",
+      "linkText": "link",
+      "details": [{
+        "text": "这是一个用于学习Vuejs的练手项目，利用第三方API，获取慕课网课程列表，前台用Vue实现展示，支持分页加载、支持直接在浏览器地址栏修改传参加载数据、页面布局支持响应式，运用了Vue+Vue-route+axio+iview。"
+      }]
+    }
+  ]
+}

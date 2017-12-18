@@ -1,0 +1,20 @@
+<div class="item-title">
+  <i class="fa fa-briefcase item-icon"></i>
+  <span>工作经历</span>
+</div>
+<ul class="li-dot">
+  {{#each this}}
+  <li>
+    <div class="item-info">
+      <span class="time">{{time}}</span>
+      <span class="company">{{company}}</span>
+      <span class="job">{{job}}</span>
+    </div>
+    <ul class="item-list">
+      {{#each details}}
+      <li>{{text}}</li>
+      {{/each}}
+    </ul>
+  </li>
+  {{/each}}
+</ul>

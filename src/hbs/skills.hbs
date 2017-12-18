@@ -1,0 +1,15 @@
+<div class="item-title">
+  <i class="fa fa-bar-chart-o item-icon"></i>
+  <span>技能特长</span>
+</div>
+<ul>
+   {{#each this}}
+  <li>
+    <p class="skill-name">{{name}}</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" style="width: {{proportion}}">
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</ul>

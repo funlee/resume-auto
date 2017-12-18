@@ -5,7 +5,6 @@
  * @Last Modified time:   2017-12-18 08:12:38 
  * @Description: gulpfile.js
  */
-
 const gulp = require('gulp')
 const concat = require('gulp-concat')
 const less = require('gulp-less')
@@ -16,13 +15,21 @@ const imagemin = require('gulp-imagemin')
 const uglify = require('gulp-uglify')
 const browserSync = require('browser-sync')
 const opn = require('opn')
+const browserify = require('browserify')
+const gutil = require('gulp-util')
+const source = require('vinyl-source-stream')
+const buffer = require('vinyl-buffer')
+
+const hbsfy = require('hbsfy')
 
 const path = {
-  less: ['./node_modules/font-awesome/css/font-awesome.css','./src/less/*.less'],
+  less: ['./node_modules/font-awesome/css/font-awesome.css', './src/less/*.less'],
   img: './src/img/*',
   js: './src/js/*.js',
   html: './src/index.html',
-  fonts:'./node_modules/font-awesome/fonts/*',
+  fonts: './node_modules/font-awesome/fonts/*',
+  hbs: './src/hbs/*',
+  data: './src/data/*',
   src: './'
 }
 
@@ -54,14 +61,28 @@ gulp.task('img', () =>
 )
 
 gulp.task('js', () => {
-  return gulp.src(path.js)
+  var b = browserify({
+    entries: './src/js/app.js',
+    debug: true
+  })
+  return b.transform(hbsfy).bundle()
+    .pipe(source("main.min.js"))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({
+      loadMaps: true
+    }))
     .pipe(uglify())
-    .pipe(concat('main.min.js'))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./dist/js'))
+    .on('error', gutil.log)
+    .pipe(sourcemaps.write("./"))
+    .pipe(gulp.dest("./dist/js"))
 })
 
-gulp.task('server', ['html', 'fonts','less', 'img', 'js'], () => {
+gulp.task('data', () =>
+  gulp.src(path.data)
+  .pipe(gulp.dest('./dist/data'))
+)
+
+gulp.task('server', ['html', 'fonts', 'less', 'img', 'js', 'data'], () => {
   browserSync.init({
     server: './dist/',
     port: 8080,
@@ -75,7 +96,7 @@ gulp.task('server', ['html', 'fonts','less', 'img', 'js'], () => {
   gulp.watch(path.less, ['less'])
   gulp.watch(path.js, ['js'])
 
-  gulp.watch([path.html, path.less, path.js]).on('change', () => {
+  gulp.watch([path.html, path.less, path.js, path.hbs, path.data]).on('change', () => {
     browserSync.reload()
   })
 })
