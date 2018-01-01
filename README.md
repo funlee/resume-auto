@@ -46,5 +46,6 @@ gulp server
 * 如需修改配色、布局等，可自行修改样式文件 [resume.less](/src/less/resume.less "简历样式")
 * 导出图片格式或者 PDF 格式，我的方法是使用 [360浏览器](http://se.360.cn/ "360浏览器") 的网页导出为图片功能，然后在 PS 里面编辑（裁剪）图片，进而制作 JPG 格式或者 PDF 格式
 
-
-
+change log
+--------------
+20180101 : [webpack版本](https://github.com/funlee/funlee-resume "resume")
