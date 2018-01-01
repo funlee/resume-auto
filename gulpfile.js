@@ -94,7 +94,9 @@ gulp.task('server', ['html', 'fonts', 'less', 'img', 'js', 'data'], () => {
 
   gulp.watch(path.html, ['html'])
   gulp.watch(path.less, ['less'])
+  gulp.watch(path.hbs, ['js'])
   gulp.watch(path.js, ['js'])
+  gulp.watch(path.data, ['js'])
 
   gulp.watch([path.html, path.less, path.js, path.hbs, path.data]).on('change', () => {
     browserSync.reload()

@@ -64,9 +64,11 @@ li {
         line-height: 23px;
         margin-right: 5px;
     }
-    .skills li {
-        margin: 0 0 24px 0;
-    }
+    .hover-show {
+        cursor: pointer;
+    } // .skills li {
+    //     margin: 0 0 24px 0;
+    // }
     .portrait {
         width: 128px;
         height: 158px;
@@ -151,6 +153,15 @@ li {
                 color: #fff;
             }
         }
+        .advantage {
+            .li-dot li {
+                &:before {
+                    content: "● ";
+                    display: inline-block;
+                    margin-right: 4px;
+                }
+            }
+        }
     }
     .side-right {
         background: #fff;
@@ -174,22 +185,20 @@ li {
                 border-bottom: 1px solid #0b70bd;
             }
         }
-        .advantage {
-            .li-dot li {
-                &:before {
-                    content: "● ";
-                    display: inline-block;
-                    margin-right: 4px;
-                }
-            }
-        }
         .work {
             .item-list {
-             li {
-                    &:before {
-                        content: "● ";
-                        display: inline-block;
-                        margin-right: 4px;
+                .project-name {
+                    margin-bottom: 10px;
+                    color: #222;
+                    font-size: 16px;
+                }
+                .text {
+                    p {
+                        &:before {
+                            content: "● ";
+                            display: inline-block;
+                            margin-right: 4px;
+                        }
                     }
                 }
             }
