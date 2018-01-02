@@ -1,5 +1,7 @@
 resume-auto：DIY 自己的 web 版简历
 ===============================
+在线访问：[funlee's resume](http://show.funlee.cn/resume/index.html "funlee's resume")
+
 最近打算换工作了，找工作怎能没有简历呢？作为一名前端程序员，怎能没有一份 web 版的简历呢？，说做就做！
 
 虽然是个小项目，但也五脏俱全，那也得用前端工程化的手法来做啊，既然是个人项目，那为何不用点没有用过的技术栈呢，正所谓实践才是学习的好帮手！
@@ -36,8 +38,6 @@ npm install
 gulp server
 ```
 然后在浏览器里输入：http://localhost:8080 即可访问
-
-在线访问：[funlee's resume](http://show.funlee.cn/resume/index.html "funlee's resume")
 
 制作自己的简历
 -------------
