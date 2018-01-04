@@ -11,7 +11,7 @@ resume-auto：DIY 自己的 web 版简历
 * gulp：自动化项目构建利器，解决 [less](http://lesscss.org/ "less") 编译、图片压缩、 js 压缩等静态资源的处理
 * browserify：构建 js 代码，解决 js 模块化
 
-虽然现在（2017年度）有了 [webpack](https://webpack.github.io/ "webpack") ，这个更好的模块化解决方案，但哪又怎样呢？
+虽然现在（2017年度）有了 [webpack](https://webpack.github.io/ "webpack") ，这个更好的模块化解决方案，但那又怎样呢？
 
 主要功能
 -------
