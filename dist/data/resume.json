@@ -159,7 +159,7 @@
       "linkUrl": "https://github.com/funlee/resume-auto",
       "linkText": "link",
       "details": [{
-        "text": "为了制作自己的 web 版简历，就搞了这个数据模版分离的简历生成器，简单易用，只需修改一个 json 文件便可生成属于自己的简历"
+        "text": "为了制作自己的 web 版简历，就搞了这个数据模版分离的简历生成器，简单易用"
       },{
         "text": "技术栈：gulp + browserify + handlebars + less"
       }]
