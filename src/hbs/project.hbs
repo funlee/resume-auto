@@ -6,11 +6,12 @@
   {{#each this}}
   <li>
     <div class="item-info">
-      <span class="time">{{time}}</span>
+      {{!-- <span class="time">{{time}}</span> --}}
       <span class="name">{{name}}</span>
-      <span class="link">
+      <span>地址：{{linkUrl}}</span>
+      {{!-- <span class="link">
         <a href="{{linkUrl}}" target="_black" title="{{name}}">{{linkText}}</a>
-      </span>
+      </span> --}}
     </div>
     <div class="item-desciption">
       {{#each details}}
