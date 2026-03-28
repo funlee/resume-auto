@@ -1,51 +1,169 @@
-resume-auto：DIY 自己的 web 版简历
-===============================
-在线访问：[funlee's resume](http://show.funlee.cn/resume/index.html "funlee's resume")
+<div align="center">
 
-最近打算换工作了，找工作怎能没有简历呢？作为一名前端程序员，怎能没有一份 web 版的简历呢？，说做就做！
+# resume-auto
 
-虽然是个小项目，但也五脏俱全，那也得用前端工程化的手法来做啊，既然是个人项目，那为何不用点没有用过的技术栈呢，正所谓实践才是学习的好帮手！
+[![version](https://img.shields.io/badge/version-2.0.0-blue?style=flat-square)](https://github.com/funlee/resume-auto)
+[![license](https://img.shields.io/badge/license-ISC-4EB1BA?style=flat-square)](https://github.com/funlee/resume-auto/blob/master/package.json)
+[![webpack](https://img.shields.io/badge/webpack-3.x-8DD6F9?style=flat-square&logo=webpack)](https://webpack.js.org)
+[![handlebars](https://img.shields.io/badge/handlebars-4.x-f0772b?style=flat-square)](https://handlebarsjs.com)
 
-由此我采用了以前没用过的 [gulp](https://gulpjs.com/ "gulp") + [browserify](http://browserify.org/ "browserify") 组合：
+[中文](README.zh.md) · English
 
-* gulp：自动化项目构建利器，解决 [less](http://lesscss.org/ "less") 编译、图片压缩、 js 压缩等静态资源的处理
-* browserify：构建 js 代码，解决 js 模块化
+</div>
 
-虽然现在（2017年度）有了 [webpack](https://webpack.github.io/ "webpack") ，这个更好的模块化解决方案，但那又怎样呢？
+### 🦄 Introduction
 
-主要功能
--------
-* 页面内容可配置：页面内容全由一个 JSON 文件结合 [handlebars](http://handlebarsjs.com/ "handlebars") 渲染生成
-* 页面支持响应式：采用 [Bootstrap](http://www.bootcss.com/) 响应式布局
-* 新功能迭代中...
+`resume-auto` is a web-based resume generator built with **Webpack + Handlebars + Less**. It follows a **data-template separation** philosophy: all resume content is managed in a single `resume.json` file, the HTML structure is rendered by Handlebars templates, styles are written in Less, and the final output is a deployable static page.
 
-技术栈
-------
-* [gulp](https://gulpjs.com/ "gulp")
-* [browserify](http://browserify.org/ "browserify")
-* [handlebars](http://handlebarsjs.com/ "handlebars")
-* [less](http://lesscss.org/ "less")
-* [Bootstrap](http://www.bootcss.com/)
+### ✨ Features
 
-安装
-----
-首先确保电脑上安装 [Node.js](https://nodejs.org/zh-cn/ "Node.js") 和 [Git](https://git-scm.com/ "Git")
+- 📄 **Data-driven**: All resume content (basic info, skills, work experience, projects, etc.) is managed through `resume.json` — no need to touch HTML
+- 🎨 **Clean UI**: A two-column layout (blue left, white right) with Font Awesome icons for a professional look
+- 📊 **Visual Skill Bars**: Progress bars visually represent proficiency levels for each skill
+- 📱 **Responsive Layout**: Grid-based system that adapts to different screen sizes
+- ⚡ **Loading Animation**: An elegant loading animation is shown on page initialization
+- 🔔 **Tab Title Easter Egg**: The browser tab title dynamically changes when switching away (fun interaction)
+- 🔒 **Privacy Protection**: Sensitive info like name and phone number is hidden by default and revealed on hover
+- 📦 **Engineering Build**: Based on Webpack 3, supports hot-reload in development and optimized production builds
+
+### 🛠 Tech Stack
+
+| Technology | Version | Purpose |
+|---|---|---|
+| Webpack | ^3.10.0 | Module bundler |
+| Handlebars | ^4.0.11 | HTML template engine |
+| Less | ^2.7.2 | CSS preprocessor |
+| jQuery | ^3.2.1 | DOM manipulation |
+| Font Awesome | ^4.7.0 | Icon library |
+| Babel | ^6.26.0 | ES6+ transpiler |
+| webpack-dev-server | ^2.9.7 | Development server |
+
+### 📁 Project Structure
+
+```
+resume-auto/
+├── build/
+│   ├── webpack.config.js            # Dev Webpack config
+│   └── webpack.production.config.js # Prod Webpack config
+├── src/
+│   ├── app.js                       # Entry point
+│   ├── index.html                   # HTML template
+│   ├── data/
+│   │   └── resume.json              # ⭐ Resume data config (core)
+│   ├── hbs/                         # Handlebars templates
+│   │   ├── basic.hbs                # Basic info template
+│   │   ├── contact.hbs              # Contact template
+│   │   ├── skills.hbs               # Skills template
+│   │   ├── advantage.hbs            # Self-summary template
+│   │   ├── work.hbs                 # Work experience template
+│   │   └── project.hbs              # Project experience template
+│   ├── css/
+│   │   ├── resume.less              # Main styles
+│   │   ├── grid.less                # Grid layout styles
+│   │   └── loading.less             # Loading animation styles
+│   ├── js/
+│   │   └── playTitle.js             # Tab title switch feature
+├── package.json
+└── favicon.ico
+```
+
+### 🚀 Getting Started
+
+**Prerequisites**
+
+- Node.js >= 6.0
+- npm >= 3.0
+
+**Installation**
 
 ```bash
 git clone https://github.com/funlee/resume-auto.git
 cd resume-auto
 npm install
-gulp server
 ```
-然后在浏览器里输入：http://localhost:8080 即可访问
 
-制作自己的简历
--------------
-如果你喜欢 [此简历](http://show.funlee.cn/resume/index.html "funlee's resume") 的模版，那你用此项目的代码进行 DIY ，进而制作属于自己的简历：
-* 进入 data 文件夹，编辑 [data](/src/data/resume.json "内容配置项") 中的内容即可定制属于你的内容
-* 如需修改配色、布局等，可自行修改样式文件 [resume.less](/src/less/resume.less "简历样式")
-* 导出图片格式或者 PDF 格式，我的方法是使用 [360浏览器](http://se.360.cn/ "360浏览器") 的网页导出为图片功能，然后在 PS 里面编辑（裁剪）图片，进而制作 JPG 格式或者 PDF 格式
+**Development**
 
-change log
---------------
-20180101 : [webpack版本](https://github.com/funlee/funlee-resume "resume")
+```bash
+npm start
+```
+
+The browser will automatically open at `http://localhost:8080` with hot-reload enabled.
+
+**Production Build**
+
+```bash
+npm run build
+```
+
+The output will be generated in the `dist/` directory and can be deployed to any static file server.
+
+### ✏️ Customizing Your Resume
+
+Simply edit `src/data/resume.json` to update your resume content.
+
+**resume.json Data Structure**
+
+```json
+{
+  "title": "Page title",
+  "basic": {
+    "name": "Display name (can be masked)",
+    "reallyName": "Real name (shown on hover)",
+    "nation": "Ethnicity",
+    "location": "City",
+    "birth": "Date of birth",
+    "flag": "Job target",
+    "education": "School (Degree)"
+  },
+  "contact": {
+    "tel": "Display phone (can be masked)",
+    "reallyTel": "Real phone (shown on hover)",
+    "email": "Email",
+    "qq": "QQ",
+    "wechat": "WeChat",
+    "website": "Personal website",
+    "github": "GitHub profile"
+  },
+  "skills": [{ "name": "Skill name", "proportion": "Proficiency, e.g. 90%" }],
+  "advantage": [{ "text": "Self-advantage description" }],
+  "work": [
+    {
+      "time": "Employment period",
+      "company": "Company name",
+      "job": "Job title",
+      "details": [{ "text": "Job responsibility description" }]
+    }
+  ],
+  "project": [
+    {
+      "time": "Project date",
+      "name": "Project name",
+      "linkUrl": "Project URL",
+      "linkText": "Link label",
+      "details": [{ "text": "Project description" }]
+    }
+  ]
+}
+```
+
+### 🖨️ Make Your Own Resume
+
+If you like this resume template, feel free to DIY it and create your own resume:
+
+1. **Customize content**: Go to the `src/data/` folder and edit `resume.json` to fill in your own information
+
+2. **Modify styles**: To change colors, layout, or other visual details, edit `src/css/resume.less`
+
+3. **Export as Image / PDF**: The recommended approach is to use the browser's built-in print dialog (`Ctrl + P` / `Cmd + P`) and choose **Save as PDF** to export directly. Alternatively, you can use a browser's "Export page as image" feature, then edit and crop the image in Photoshop to produce a JPG or PDF file
+
+### 📸 Preview
+
+The resume page uses a classic two-column layout:
+
+- **Left column** (blue background): Basic info, Contact, Skills, Self-summary
+- **Right column** (white background): Work experience, Project experience
+
+### 📄 License
+
+[ISC](./package.json) © [funlee](https://github.com/funlee)

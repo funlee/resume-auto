@@ -3,7 +3,7 @@
   <span>工作经历</span>
 </div>
 <ul>
-   {{#each this}}
+  {{#each this}}
   <li>
     <div class="item-info">
       <span class="time">{{time}}</span>
@@ -11,23 +11,8 @@
       <span class="job">{{job}}</span>
     </div>
     <ul class="item-list">
-       {{#each details}}
-      <li>
-        <p class="project-name">{{title}}</p>
-        <div class="text">
-          {{#each text}}
-          <p>
-            {{des}}
-          </p>
-           {{/each}}
-           {{#if url}}
-          <p>
-            在线访问：
-            <a href="{{url}}" target="_black"> {{url}} </a>
-          </p>
-          {{/if}}
-        </div>
-      </li>
+      {{#each details}}
+      <li>{{text}}</li>
       {{/each}}
     </ul>
   </li>

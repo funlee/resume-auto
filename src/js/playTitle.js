@@ -5,8 +5,7 @@
  * @Last Modified time:   2017-12-20 22:33:59 
  * @Description: play title
  */
-var data = require('../data/resume.json')
-var title = data.title
+var title = 'funlee | resume'
 var hidden
 var visibilityChange
 
@@ -17,7 +16,6 @@ function handleVisibilityChange() {
     document.title = title
   }
 }
-
 function playTitle() {
   if (typeof document.hidden !== "undefind") {
     hidden = 'hidden';

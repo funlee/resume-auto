@@ -1,202 +1,203 @@
 {
-  "title":"funlee's resume",
+  "title": "lihua's resume",
   "basic": {
-    "name": "李  伟",
-    "nation": "汉  族",
-    "location": "成  都",
+    "name": "lihua",
+    "reallyName": "李华",
+    "nation": "汉族",
+    "location": "北京",
     "birth": "1992.10",
-    "status": "在职-月内到岗",
-    "flag": "前端、全栈尝试者",
-    "education": "西南科技大学"
+    "flag": "全栈工程师",
+    "education": "北京大学（本科）"
   },
   "contact": {
-    "tel": "15680870903",
-    "reallyTel": "15680870903",
+    "tel": "135****3628",
+    "reallyTel": "13527473628",
     "email": "i@funlee.cn",
     "qq": "458109846",
     "wechat": "lyc458109846",
-    "website": "https://www.funlee.cn",
+    "website": "http://www.funlee.cn",
     "github": "https://github.com/funlee"
   },
-  "skills": [{
-      "name": "HTML5&CSS3",
+  "skills": [
+    {
+      "name": "HTML5 & CSS3",
       "proportion": "95%"
     },
     {
-      "name": "JavaScript",
+      "name": "JavaScript / TypeScript",
+      "proportion": "92%"
+    },
+    {
+      "name": "React / Vue",
       "proportion": "90%"
     },
     {
-      "name": "D3.js",
-      "proportion": "88%"
+      "name": "Node.js",
+      "proportion": "85%"
     },
     {
-      "name": "SVG",
-      "proportion": "86%"
+      "name": "Java / Spring Boot",
+      "proportion": "82%"
     },
     {
-      "name": "Vuejs",
-      "proportion": "80%"
+      "name": "MySQL / Redis",
+      "proportion": "78%"
     },
     {
-      "name": "NodeJS",
+      "name": "Docker / K8s",
       "proportion": "70%"
-    },
-    {
-      "name": "mongoDB",
-      "proportion": "65%"
     }
   ],
-  "advantage": [{
-      "text": "三年前端开发经验，多次担任项目前端开发负责人，能独立完成 web 项目的前端开发工作"
+  "advantage": [
+    {
+      "text": "具备扎实的前端工程化能力，熟练掌握 React、Vue 等主流框架，有大型单页应用从 0 到 1 的完整开发经验"
     },
     {
-      "text": "擅长数据可视化开发，能熟练使用 canvas 和 svg，对 Echarts、D3.js、OpenLayers 等可视化工具库具有丰富的使用经验，能熟练开发常用图表、地图等可视化组件"
+      "text": "精通 Java 后端开发，熟悉 Spring Boot、MyBatis 等主流框架，具备完整的 RESTful API 设计与微服务拆分经验"
     },
     {
-      "text": "熟悉 React 全家桶和 Vue 技术栈，热爱分享，具备一定演讲能力，曾多次在前端组内进行技术分享"
+      "text": "熟悉 MySQL 索引优化、Redis 缓存策略及分布式系统常见方案，能够独立定位并解决高并发场景下的性能瓶颈"
     },
     {
-      "text": "对利用 Node.js 进行后端开发有所涉猎，有过利用 Express + MongoDB + Vue 进行全栈开发的经验"
-    },
-    {
-      "text": "热衷于用代码去实现一些自己奇怪的 idea，爱好烹饪、写作，有极强的时间规划观念"
+      "text": "具备良好的工程素养，熟悉 CI/CD 流程，能主导跨团队技术方案评审与落地，热爱技术分享与开源贡献"
     }
   ],
   "work": [
     {
-      "time": "2018.2-至今",
-      "company": "成都数联铭品（BBD）",
-      "job": "前端工程师",
+      "time": "2021.7 - 至今",
+      "company": "字节跳动",
+      "job": "高级全栈工程师",
       "details": [
         {
-          "title": "1.多源情报智能分析实验室",
-          "text": [{
-              "des": "业务功能是对经过机器算法处理的海量非结构化情报数据进行可视化展示，并提供编辑修改操作，解决机器算法处理的错误"
-            },
-            {
-              "des": "主管整个项目的前端开发，负责工时评估、技术选型、前端业务逻辑开发等工作，参与从项目立项到项目上线的整个流程"
-            },
-            {
-              "des": "采用 React 技术栈，状态管理采用 Mobx，可视化图表采用 D3.js 和 Echarts、地图可视化采用 PGIS + OpenLayers"
-            },
-            {
-              "des": "解决了项目中文本编辑标注、地图可视化交互操作等复杂功能的实现，封装了模态弹窗、分页、地区联动选择等 React 组件"
-            }
-          ]
+          "text": "负责抖音创作者平台核心功能迭代，基于 React + TypeScript 构建高性能数据看板，DAU 峰值支撑超 500 万"
         },
         {
-          "title": "2. 妮雅丝大数据综合平台",
-          "text": [{
-              "des": "该项目是个后台管理系统，方便客户对旗下业务的各类大数据资源及各级人员访问资源权限的展示和管理"
-            },
-            {
-              "des": "采用 React + React-Router + Mobx 进行 SPA 页面开发，UI 采用 antd，函数工具库利用 Ramda，可视化用 Echarts"
-            },
-            {
-              "des": "负责利用 webpack 进行前端脚手架的搭建以及个人中心、后台管理两个模块的前端功能实现"
-            },
-            {
-              "des": "主要攻克了项目中【资源目录管理树】功能的实现，实质就是实现一个具有复杂交互操作的【树图】"
-            }
-          ]
-        }
-      ]
-    },{
-      "time": "2016.8-2018.2",
-      "company": "重庆海云数据",
-      "job": "前端工程师",
-      "details": [
-        {
-          "title": "1.昆明市公安警务综合展示平台",
-          "text": [
-            {
-              "des": "业务功能是对昆明市海量的警务数据进行分类可视化展示，帮助警务人员全面快速的掌握警务信息，明确警务的优先级"
-            },
-            {
-              "des": "统筹该项目的前端开发工作，参与技术可行性评估，负责接口文档编写、前端业务实现、前后端联调等工作"
-            },
-            {
-              "des": "考虑到公安内网的开发环境限制，在技术选型时前端技术采用 SeaJS + D3.js + PGIS 来进行开发"
-            },
-            {
-              "des": "该项目共计五个专题，十六个页面，以功能全面、友好的页面交互获得昆明市大数据平台擂台赛第一名"
-            }
-          ]
+          "text": "主导前端工程化体系升级，引入 Monorepo 架构与模块联邦方案，跨业务线代码复用率提升 40%"
         },
         {
-          "title": "2.hyOA",
-          "text": [
-            {
-              "des": "该项目是一个 OA 办公管理系统，方便行政部门对公司的员工信息、项目进度、图书借阅和各类审批流程的信息化管理"
-            },
-            {
-              "des": "主要负责该项目中的公司公告、图书借阅两个模块功能的全栈开发，包括前端页面、后端数据的增删改查"
-            },
-            {
-              "des": "采用 Vue + antd + Express + MongoDB 的技术栈来进行全栈开发"
-            }
-          ]
+          "text": "参与后端 Java 服务开发，设计并落地基于 Spring Cloud Gateway 的统一鉴权网关，接口平均响应时间降低 30%"
+        },
+        {
+          "text": "总结：在字节期间深度参与千万级用户产品，积累了前后端协同、高并发系统设计及大规模工程协作的丰富经验"
         }
       ]
     },
     {
-      "time": "2015.12-2016.8",
-      "company": "重庆叁壹伍捌",
+      "time": "2019.3 - 2021.6",
+      "company": "阿里巴巴",
       "job": "前端工程师",
       "details": [
         {
-          "title": "1.3158企业在线",
-          "text": [{
-              "des": "业务功能是通过对各类商家的信息进行展示，致力于帮助各类商家打通上下供应链"
-            },
-            {
-              "des": "主要负责整个站点 PC 端和移动端页面设计稿的还原工作，并配合后端 PHP 开发人员进行相关功能的优化迭代"
-            },
-            {
-              "des": "完成了近50+静态页面的 UI 还原工作，对 CSS + HTML 的基础知识和运用有了深刻认识"
-            }
-          ]
+          "text": "负责闲鱼 B 端卖家中心改版，使用 React + Ant Design Pro 完成核心交易模块的前端重构，页面加载时间优化 50%"
+        },
+        {
+          "text": "参与搭建团队内部低代码平台，抽象表单、表格等高频场景组件，支撑 30+ 业务页面的快速交付"
+        },
+        {
+          "text": "与 Java 后端同学协作，基于 GraphQL 设计数据聚合层，减少前端多次请求瀑布流问题，接口数量减少 60%"
+        },
+        {
+          "text": "总结：阿里的工作经历让我在组件化设计思维、性能优化实践以及跨团队协作能力上得到了全面提升"
+        }
+      ]
+    },
+    {
+      "time": "2017.7 - 2019.2",
+      "company": "百度",
+      "job": "前端开发工程师",
+      "details": [
+        {
+          "text": "参与百度地图 Web 端 POI 展示模块开发，基于 Vue 2 + Vuex 完成地图标注、路线规划等核心交互功能"
+        },
+        {
+          "text": "独立完成百度统计内部运营后台从 jQuery 到 Vue 的技术栈迁移，并引入单元测试，覆盖率达 80%"
+        },
+        {
+          "text": "总结：在百度的两年奠定了扎实的前端工程基础，培养了严谨的编码规范意识和较强的自驱学习能力"
         }
       ]
     }
   ],
   "project": [
-    
     {
-      "time": "2017.12",
-      "name": "vue-visualization",
-      "linkUrl": "https://github.com/funlee/vue-visualization",
-      "linkText": "link",
-      "details": [{
-          "text": "为了尝试在框架中实现可视化页面的开发，在业余时间利用 D3.js + Vue 做了这个数据可视化练习项目"
+      "time": "2023.4",
+      "name": "创作者数据大盘",
+      "linkUrl": "https://www.baidu.com",
+      "linkText": "在线访问",
+      "details": [
+        {
+          "text": "项目背景：字节跳动内部项目，面向抖音千万级创作者提供实时数据分析与收益管理功能，覆盖视频播放量、粉丝增长、互动率、广告收益等核心指标的多维度可视化展示。"
         },
         {
-          "text": "技术栈：Vue + vue-router + D3.js + Mock Server"
+          "text": "技术选型：前端采用 React 18 + TypeScript + ECharts 5，使用 React Query 管理异步数据状态，搭配 WebSocket 实现关键指标的实时推送；后端基于 Java Spring Boot + Kafka 构建流式数据处理管道，通过 Flink 进行实时聚合计算，最终落库至 ClickHouse 以支撑高频查询。"
+        },
+        {
+          "text": "个人职责：担任前端技术负责人，参与从 0 到 1 的架构设计，制定组件规范与数据请求规范；主导大盘图表渲染性能优化，针对百万级数据点采用虚拟滚动 + 按需渲染策略，渲染帧率稳定在 60fps。"
+        },
+        {
+          "text": "项目成果：项目上线后月活创作者超 1200 万，创作者工具使用率提升 35%，7 日留存率提升 12%；团队交付周期较预期缩短 20%，获得年度优秀项目奖。"
         }
       ]
     },
     {
-      "time": "2018.4",
-      "name": "cnode-webApp",
-      "linkUrl": "https://github.com/funlee/cnode-webApp",
-      "linkText": "link",
-      "details": [{
-        "text": "为了学习 webpack 搭建脚手架和移动端项目的开发，自己从无到有的利用 webpack + react 开发了这个移动端项目"
-      }, {
-        "text": "技术栈： webpack + react + antd"
-      }]
+      "time": "2022.9",
+      "name": "低代码页面搭建平台",
+      "linkUrl": "https://www.baidu.com",
+      "linkText": "在线访问",
+      "details": [
+        {
+          "text": "项目背景：为解决运营团队高度依赖研发资源、活动页上线周期长的痛点，主导从零构建面向内部的可视化低代码搭建平台，支持运营人员通过拖拽方式配置并发布营销活动页、数据报表及内容聚合页面。"
+        },
+        {
+          "text": "技术架构：前端基于 React + react-dnd 实现拖拽引擎，设计物料注册机制，支持表单、表格、轮播图、图表等 20+ 内置组件的动态配置；引擎核心采用 JSON Schema 驱动渲染，前后端均基于相同 Schema 结构进行解析，保证 SSR 与 CSR 渲染一致性。后端采用 Node.js + Koa2 + MySQL，提供页面 Schema 的存储、版本管理与灰度发布能力。"
+        },
+        {
+          "text": "难点攻克：针对组件嵌套拖拽冲突问题，设计了基于事件冒泡拦截的嵌套容器方案；针对多人协同编辑场景，引入 OT 算法（操作变换）解决并发冲突，确保协同编辑的数据一致性。"
+        },
+        {
+          "text": "项目成果：平台上线后覆盖 30+ 业务场景，运营人员自助搭建页面效率提升 70%，每月节省研发人力约 40 人日；沉淀为公司内部通用基础设施，已在 3 个业务线推广复用。"
+        }
+      ]
     },
     {
-      "time": "2017.9",
-      "name": "d3charts",
-      "linkUrl": "https://github.com/funlee/d3charts",
-      "linkText": "link",
-      "details": [{
-        "text": "为了在组内进行技术分享，而做的一个展示页面，旨在通过这次分享，帮助新同事快速上手 D3.js"
-      },{
-        "text": "技术栈：webpack + D3.js + Mockjs"
-      }]
+      "time": "2021.3",
+      "name": "电商 B 端卖家中心重构",
+      "linkUrl": "https://www.baidu.com",
+      "linkText": "在线访问",
+      "details": [
+        {
+          "text": "项目背景：闲鱼卖家中心原有系统基于老旧 jQuery + 模板渲染技术栈，页面性能差、维护成本高、无法支撑复杂交互需求，决策进行整体前端架构升级与重构。"
+        },
+        {
+          "text": "技术方案：将原有多页面应用（MPA）改造为基于 React 18 + React Router 6 的单页应用（SPA），引入 Zustand 作为轻量状态管理方案，接入阿里统一埋点 SDK 与 Sentry 前端监控，实现全链路可观测性。"
+        },
+        {
+          "text": "性能优化：采用路由级 Code Splitting + React.lazy 按需加载，减少首屏 JS Bundle 体积 58%；图片资源接入 CDN + WebP 自动转换，配合 IntersectionObserver 实现懒加载；接口层封装统一缓存策略，针对高频只读接口引入 SWR 模式，减少重复请求约 40%。"
+        },
+        {
+          "text": "项目成果：首屏加载时间从 4.2s 优化至 1.8s，Lighthouse 综合评分从 62 提升至 91；重构后业务迭代速度提升 2 倍，线上 JS 错误率下降 75%，获得阿里技术委员会优秀重构案例认定。"
+        }
+      ]
+    },
+    {
+      "time": "2020.6",
+      "name": "imooc-fullstack",
+      "linkUrl": "https://github.com/funlee/imooc-fullstack",
+      "linkText": "在线访问",
+      "details": [
+        {
+          "text": "项目背景：个人全栈实践项目，以慕课网课程平台为原型，涵盖用户体系、课程管理、购物车、订单支付等完整电商业务流程，旨在打通前后端全链路开发能力。"
+        },
+        {
+          "text": "前端技术：基于 Vue 3 + TypeScript + Pinia 构建 SPA，使用 Vue Router 4 实现动态路由权限控制，封装通用 Axios 拦截器处理 Token 刷新和统一错误提示；UI 层采用 Element Plus，部分场景自定义封装业务组件以提升复用性。"
+        },
+        {
+          "text": "后端技术：基于 Spring Boot 3 + MyBatis Plus + MySQL 构建 RESTful API，引入 Spring Security + JWT 实现无状态鉴权；使用 Redis 实现 Session 共享、热点课程缓存及分布式限流；集成 RabbitMQ 处理订单超时关闭等异步任务；通过 Swagger 3 自动生成接口文档，前后端并行开发效率提升明显。"
+        },
+        {
+          "text": "工程化与部署：使用 Docker Compose 编排前端 Nginx + 后端 Java 容器 + MySQL + Redis 的本地开发环境；在云服务器上配置 GitHub Actions 实现代码推送后自动构建镜像并部署，实现完整的 CI/CD 闭环。"
+        }
+      ]
     }
   ]
 }

@@ -1,11 +1,17 @@
 {
   "name": "resume-auto",
   "version": "2.0.0",
-  "description": "Wow, such a beautiful resume",
-  "main": "index.html",
+  "description": "diy your resume",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "set NODE_ENV=production && webpack --config build/webpack.production.config.js --progress",
+    "start": "webpack-dev-server --config build/webpack.config.js"
   },
+  "keywords": [
+    "webpack",
+    "resume",
+    "diy"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/funlee/resume-auto.git"
@@ -17,23 +23,27 @@
   },
   "homepage": "https://github.com/funlee/resume-auto#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "browserify": "^14.5.0",
-    "browserify-handlebars": "^1.0.0",
+    "autoprefixer": "^7.2.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.7",
+    "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^4.0.0",
-    "gulp-less": "^3.3.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "handlebars": "^4.1.0",
-    "hbsfy": "^2.8.1",
-    "opa": "^11.22.0",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "font-awesome-webpack": "0.0.5-beta.2",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.5.0",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.5",
+    "open-browser-webpack-plugin": "0.0.5",
+    "postcss-loader": "^2.0.9",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "webpack": "^3.10.0"
   }
 }
