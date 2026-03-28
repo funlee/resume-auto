@@ -164,6 +164,8 @@ The resume page uses a classic two-column layout:
 - **Left column** (blue background): Basic info, Contact, Skills, Self-summary
 - **Right column** (white background): Work experience, Project experience
 
+![Preview](./src/preview/demo-resume-en.png)
+
 ### 📄 License
 
 [ISC](./package.json) © [funlee](https://github.com/funlee)

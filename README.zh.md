@@ -164,6 +164,8 @@ npm run build
 - **左侧栏**（蓝色背景）：基本信息、联系方式、技能特长、自我总结
 - **右侧栏**（白色背景）：工作经历、项目经历
 
+![预览图](./src/preview/demo-resume-zh.png)
+
 ### 📄 License
 
 [ISC](./package.json) © [funlee](https://github.com/funlee)
